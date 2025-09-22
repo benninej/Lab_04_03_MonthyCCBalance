@@ -2,13 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        double INTREST_RATE = 0.17;
-        int balance = 5000;
+        double INTEREST_RATE = 0.17;
+        double balance = 5000;
 
-        int balance = balance + balance * INTREST_RATE;
+        double monthlyBalance = balance + (balance * INTEREST_RATE);
+        System.out.println("Your balance after one month is: " + monthlyBalance);
 
-        System.out.println("Your balance after one month is: " + balance);
-        System.out.println("Your balance after two months is: " + balance);
+        System.out.println("Your balance after two months is: " + monthlyBalance);
 
 
     }
